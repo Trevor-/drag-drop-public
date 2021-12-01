@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="../js/libs/vue.js"></script>
+    <script src="../js/libs/http-vue-loader.js"></script>
+  </head>
+
+  <body>
+    <div>
+      Hi <a href="./index.html" style="color: red;">↺</a>
+    </div>
+    <script>
+      vData={
+        foo: 'bar'
+      }
+    </script>
+    <div id="my-app">
+      <my-component></my-component>
+      vData: {{vData}}
+    </div>
+
+
+    <script type="text/javascript">
+      new Vue({
+        el: '#my-app',
+        components: {
+          'my-component': httpVueLoader('components/my-component.vue')
+        },
+        data: function() {
+          return {
+            vData: vData
+          }
+        }
+      });
+      console.log('window.__adobe__1')
+      console.log(window.__adobe__)
+      console.log('window.__adobe__2')
+    </script>
+    <style>
+      .hello {
+          color: rgb(0, 97, 0);
+      }
+      body {
+        color: rgb(128, 128, 255);
+        background-color: #333;
+      }
+      </style>
+  </body>
+</html>
+

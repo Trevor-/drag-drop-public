@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest  Version="6.0"
+                    ExtensionBundleId="com.creative-scripts.drag.and.drop"
+                    ExtensionBundleVersion="3.0"
+                    ExtensionBundleName="drag and drop"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Author>Trevor http://www.creative-scripts.com</Author>
+    <Legal>Copyright Michael Bruny-Groth</Legal>
+    <Abstract>Logo Package Express - Copyright Michael Bruny-Groth</Abstract>
+    <ExtensionList>
+        <Extension Id="com.creative-scripts.drag.and.drop" Version="3.0" />
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <!-- This is for Illustrator CC2018 onwards is 22 -->
+            <Host Name="ILST" Version="22" />
+            <Host Name="INDS" Version="15" />
+        </HostList>
+        <LocaleList>
+            <Locale Code="All" />
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="6.0" />
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <Extension Id="com.creative-scripts.drag.and.drop">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./html/index-cep.html</MainPath>
+                    <CEFCommandLine>
+                        <Parameter>--disable-features=SameSiteByDefaultCookies,CookiesWithoutSameSiteMustBeSecure,NetworkService</Parameter>
+                        <Parameter>--disable-site-isolation-trials</Parameter>
+                        <Parameter>--enable-nodejs</Parameter>
+                        <Parameter>--mixed-context</Parameter>
+                        <Parameter>--high-dpi-support=1</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>drag and drop</Menu>
+                    <Geometry>
+                        <Size>
+                            <Height>512</Height>
+                            <Width>370</Width>
+                        </Size>
+                        <MinSize>
+                            <Height>240</Height>
+                            <Width>190</Width>
+                        </MinSize>
+                    </Geometry>
+                    <Icons>
+                        <Icon Type="Normal">./resources/Icons/light.png</Icon>
+                        <Icon Type="RollOver">./resources/Icons/light.png</Icon>
+                        <Icon Type="Disabled">./resources/Icons/light.png</Icon>
+                        <Icon Type="DarkNormal">./resources/Icons/dark.png</Icon>
+                        <Icon Type="DarkRollOver">./resources/Icons/dark.png</Icon>
+                    </Icons>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>

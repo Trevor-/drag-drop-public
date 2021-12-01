@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es3",
+    "module": "commonjs",
+    "outDir": "../extension/jsx",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env",
+        "./types", // Choose your own folder where you want to keep the types for Adobe.
+        "../com.creative-scripts.drag.and.drop/jsx/polyfills/extendscript-polyfills", // This one declaration file has the behavior of pulling in all referenced code and splicing it into the 'outFile'.
+    ],
+    "paths": {
+      "@/*": [
+        "jsx/src/*"
+      ]
+    },
+    "lib": [
+      "esnext"
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.vue"
+  ],
+  "exclude": [
+    "node_modules",
+    "./polyfills"
+
+  ]
+}

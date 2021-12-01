@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionList>
+    <Extension Id="com.creative-scripts.drag.and.drop">
+        <HostList>
+            <!-- Illustrator -->
+            <Host Name="ILST" Port="7042" />
+        </HostList>
+    </Extension>
+</ExtensionList>
