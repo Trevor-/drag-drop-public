@@ -4,9 +4,9 @@
   "private": true,
   "main": "./extension/html/index-cep.html",
   "scripts": {
-    "serve": "EXPORT NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
-    "build": "EXPORT NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
-    "lint": "EXPORT NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service lint",
+    "serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
+    "lint": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service lint",
     "serve-windows": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
     "build-windows": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
     "lint-windows": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service lint"
